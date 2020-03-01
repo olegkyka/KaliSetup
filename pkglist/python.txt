@@ -1,0 +1,8 @@
+Cython
+matplotlib
+numpy
+pwn
+requests
+scapy
+scipy
+scrapy

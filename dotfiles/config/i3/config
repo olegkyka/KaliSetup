@@ -1,0 +1,289 @@
+# i3 config file (v4)
+# vim: filetype=i3
+
+########## Declare variables ##########
+
+### Keys ###
+set $mod Mod4
+
+### Display ###
+for_window [class="^.*"] border pixel 3
+gaps inner 1
+gaps outer 0
+
+### Workspaces ###
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+### Functions ###
+
+# Refresh Internet
+set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
+
+# Custom split toggle
+set $split_toggle exec sh ~/.config/i3/scripts/split_toggle.sh
+
+# Shutdown Menu
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# dmenu - pentesting
+#set $pentest_menu echo -e "\
+#ghidra\n\
+#virtualbox\n\
+#" | dmenu | ./scripts/pentest_menu.sh
+
+### Default Applications ###
+set $browser firefox
+set $file_1 vifm
+set $file_2 pcmanfm
+set $term terminal
+
+# Status bar
+#exec_always --no-startup-id polybar bar1 &
+bar {
+	font pango:mono 10
+	status_command i3status
+	position top
+	mode dock
+	modifier None
+}
+
+# toggle split when new window opens
+for_window [class=.*] $split_toggle
+
+# Launch in floating mode
+for_window [title="python"] floating toggle
+
+
+
+########## Autostart Applications on Startup ##########
+
+#exec --no-startup-id xautolock -time 10 -notify 10 -notifier notify-send -locker blurlock
+
+
+
+########## Key Bindings ##########
+
+### F* row ###
+
+#bindsym $mod+Escape		#
+
+#bindsym $mod+F1			#
+
+#bindsym $mod+F2			#
+
+#bindsym $mod+F3			#
+
+#bindsym $mod+F4			#
+
+bindsym $mod+F5			restart
+bindsym $mod+Shift+F5		$netrefresh
+
+#bindsym $mod+F6			#
+
+#bindsym $mod+F7			#
+
+#bindsym $mod+F8			#
+
+#bindsym $mod+F9			#
+
+#bindsym $mod+F10		#
+
+bindsym F11			fullscreen toggle
+#bindsym $mod+F11		#
+
+# Shutdown/Lock
+bindsym $mod+F12		mode "$mode_system"
+bindsym $mod+Shift+F12		exec --no-startup-id i3exit lock, mode "default"
+
+### Alphanumerical Keys ###
+
+# switch to workspace
+bindsym $mod+1		workspace $ws1
+bindsym $mod+2		workspace $ws2
+bindsym $mod+3		workspace $ws3
+bindsym $mod+4		workspace $ws4
+bindsym $mod+5		workspace $ws5
+bindsym $mod+6		workspace $ws6
+bindsym $mod+7		workspace $ws7
+bindsym $mod+8		workspace $ws8
+bindsym $mod+9		workspace $ws9
+bindsym $mod+0		workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1	move container to workspace $ws1
+bindsym $mod+Shift+2	move container to workspace $ws2
+bindsym $mod+Shift+3	move container to workspace $ws3
+bindsym $mod+Shift+4	move container to workspace $ws4
+bindsym $mod+Shift+5	move container to workspace $ws5
+bindsym $mod+Shift+6	move container to workspace $ws6
+bindsym $mod+Shift+7	move container to workspace $ws7
+bindsym $mod+Shift+8	move container to workspace $ws8
+bindsym $mod+Shift+9	move container to workspace $ws9
+bindsym $mod+Shift+0	move container to workspace $ws10
+
+
+bindsym $mod+Shift+q		kill; $split_toggle
+
+#bindsym $mod+w			#
+
+#bindsym $mod+e			#
+
+#bindsym $mod+r 		#
+
+#bindsym $mod+t			#
+
+bindsym $mod+y			sticky toggle
+
+bindsym $mod+u			floating toggle
+
+bindsym $mod+i 			exec $term -e htop
+
+bindsym $mod+o			exec $term -e calcurse
+
+bindsym $mod+p			exec $term -e python
+#bindsym $mod+p			$pentest_menu
+
+bindsym $mod+a			workspace prev
+
+bindsym $mod+s			workspace next
+
+bindsym $mod+d			exec --no-startup-id dmenu_run
+
+bindsym $mod+f			exec $term -e $file_1
+bindsym $mod+Shift+f		exec $file_2
+
+bindsym $mod+g			$split_toggle
+
+# Movement - hjkl
+bindsym $mod+h			focus left
+bindsym $mod+Shift+h		move left 30
+bindsym $mod+Ctrl+h		resize shrink width 1 px or 1 ppt
+
+bindsym $mod+j			focus down
+bindsym $mod+Shift+j		move down 30
+bindsym $mod+Ctrl+j		resize shrink height 1 px or 1 ppt
+
+bindsym $mod+k			focus up
+bindsym $mod+Shift+k		move up 30
+bindsym $mod+Ctrl+k		resize grow height 1 px or 1 ppt
+
+bindsym $mod+l			focus right
+bindsym $mod+Shift+l		move right 30
+bindsym $mod+Ctrl+l		resize grow width 1 px or 1 ppt
+
+bindsym $mod+z			split vertical; exec notify-send "split vertical"; exec echo "v" > /tmp/i3_split_orientation.txt
+
+bindsym $mod+x			split horizontal; exec notify-send "split horizontal"; exec echo "h" > /tmp/i3_split_orientation.txt
+
+#bindsym $mod+c			#
+
+bindsym $mod+v			exec virtualbox
+
+# Browsers
+bindsym $mod+b			exec $browser
+#bindsym $mod+Shift+b		#
+
+# News
+bindsym $mod+n			exec $term -e newsboat
+bindsym $mod+Shift+n		exec $term -e nmtui
+
+# Music & Mail
+bindsym $mod+m 			exec --no-startup-id $term -e ncmpcpp
+bindsym $mod+Shift+m		exec --no-startup-id $term -e neomutt
+
+### Special Characters ###
+
+#bindsym $mod+grave		#
+#bindsym $mod+asciitilde	#
+
+#bindsym $mod+minus 		#
+
+#bindsym $mod+plus		#
+
+#bindsym $mod+BackSpace
+
+bindsym $mod+Tab		workspace back_and_forth
+
+#bindsym $mod+bracketleft 	#
+
+#bindsym $mod+bracketright 	#
+
+#bindsym $mod+backslash		#
+
+#bindsym $mod+semicolon		#
+
+#bindsym $mod+apostrophe	#
+
+bindsym $mod+Return 		exec --no-startup-id $term
+bindsym $mod+Shift+Return 	exec --no-startup-id $term -e tmux
+
+#bindsym $mod+less 		#
+
+#bindsym $mod+greater		#
+
+#bindsym $mod+slash		#
+
+#bindsym $mod+space		focus mode_toggle
+
+### Arrow Keys ###
+bindsym $mod+Left		focus left
+bindsym $mod+Shift+Left		move left
+bindsym $mod+Ctrl+Left		move workspace to output left
+bindsym $mod+Down		focus down
+bindsym $mod+Shift+Down		move down
+bindsym $mod+Ctrl+Down		move workspace to output down
+bindsym $mod+Up			focus up
+bindsym $mod+Shift+Up		move up
+bindsym $mod+Ctrl+Up		move workspace to output up
+bindsym $mod+Right 		focus right
+bindsym $mod+Shift+Right 	move right
+bindsym $mod+Ctrl+Right		move workspace to output right
+
+### Other Keys ###
+
+#bindsym $mod+Insert		#
+#bindsym $mod+Delete		#
+
+#bindsym $mod+Home		#
+#bindsym $mod+End		#
+#bindsym $mod+Prior		#
+#bindsym $mod+Next		#
+
+# Screenshots
+bindsym Print 			exec --no-startup-id maim /tmp/screenshot.png && cat /tmp/screenshot.png | xclip -selection clipboard -t image/png
+bindsym Shift+Print 		exec --no-startup-id maim -s /tmp/screenshot.png && cat /tmp/screenshot.png | xclip -selection clipboard -t image/png
+bindsym Ctrl+Print 		exec --no-startup-id maim "$HOME/Pictures/screenshot_$(date '+%y%m%d-%H%M-%S').png"
+bindsym $mod+Print 		exec --no-startup-id maim -s "$HOME/Pictures/screenshot_$(date '+%y%m%d-%H%M-%S').png"
+
+# XF86 Keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10%
+bindsym Ctrl+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym Shift+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10%
+bindsym Ctrl+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86MonBrightnessDown	exec --no-startup-id xbacklight -dec 10; exec --no-startup-id notify-send "brightness -10"
+bindsym XF85MonBrightnessUp	exec --no-startup-id xbacklight -inc 10; exec --no-startup-id notify-send "brightness +10"

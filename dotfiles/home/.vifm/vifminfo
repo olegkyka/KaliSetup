@@ -1,0 +1,335 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/pwn/
+	..
+1579784822
+'b
+	/home/pwn/bin/
+	..
+1579784822
+'h
+	/home/pwn/
+	..
+1579784822
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/pwn/git
+	ManjaroSetup
+1
+d/home/pwn
+	git
+9
+d/home
+	pwn
+1
+d/home/pwn
+	Music
+4
+d/home/pwn/Music
+	tmp
+1
+d/home/pwn/Music/tmp
+	Kids In The Dark - All Time Low.mp3
+7
+d/home/pwn/Music
+	Can_t Hold Us - Macklemore .mp3
+10
+d/home/pwn
+	Music
+4
+d/home/pwn/Music
+	Can_t Hold Us - Macklemore .mp3
+6
+d/home/pwn
+	Music
+4
+d/home/pwn/Music
+	Time Control.mp3
+26
+d/home/pwn
+	Music
+4
+d/home
+	pwn
+1
+d/home/pwn
+	Music
+4
+d/home/pwn/Music
+	Time Control.mp3
+26
+d/home/pwn
+	Music
+4
+d/home/pwn/Music
+	Antigravity - Starset.mp3
+4
+d/home/pwn
+	Music
+4
+d/home
+	pwn
+1
+d/home/pwn
+	Music
+4
+d/home/pwn/Music
+	Try It Out - Skrillex.mp3
+26
+d
+
+# Right window history (oldest to newest):
+D/home/pwn/git
+	ManjaroSetup
+1
+D/home/pwn
+	Music
+4
+D/home/pwn/Music
+	tmp
+1
+D/home/pwn/Music/tmp
+	..
+0
+D/home/pwn/Music
+	tmp
+1
+D/home/pwn/Music/tmp
+	Imagine Dragons - Believer (Audio).mp3
+2
+D/home/pwn/Music
+	tmp
+1
+D/home/pwn/Music/tmp
+	..
+0
+D/home/pwn/Music
+	tmp
+1
+D/home/pwn/Music/tmp
+	Light Up The Sky - Thousand Foot Krutch.mp3
+16
+D/home/pwn/Music
+	tmp
+1
+D/home/pwn/Music/tmp
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:Q
+:mkdir tmp
+:wq
+:cw
+:set rnu nu
+:mv ..
+:copy ..
+:copy
+:!mv *NEFFEX.mp3 ..
+:move ..
+:move
+:put
+:q
+:!mv * ..
+:nu rnu
+:set nu rnu
+:mov
+:mpv
+:!mpv
+
+# Search history (oldest to newest):
+/Cour
+/Tight
+/Money
+/The Mo
+/Pop Evi
+/medicate
+/rx
+/Class
+/Foots
+/Human
+/Rx
+/Jacdq
+/Str
+/Hold
+/Panic R
+/tmp
+/Angel
+/NEFFEX
+/Angel `
+/Skillet
+/Scars
+/Unde
+/Royal
+/Roya
+/The End 
+/Just Li
+/Just L
+/AJR
+/_
+/Bohnes
+/\cboom
+/Dia
+/Diamon
+/Three Days
+/Breaking Benjamin
+/(
+/\(
+/\clyric
+/lyric
+/Video
+/video
+/audio
+/Audio
+/official
+/Offici
+/Thousand Foot
+/Believe
+/Chapo
+/Kill E
+
+# Prompt history (oldest to newest):
+pAint My Last Dance - Five Finger Death Punch.mp3
+pAishiteru - CliffEdge.mp3
+pArigatouAishiteta Hito - Tiara Spontania.mp3
+pM.I.N.E - Five Finger Death Punch.mp3
+pPurple Lamborghini - Skrillex.mp3
+pRx - THEORY.mp3
+p LSoldier - Samantha Jade.mp3
+pCan't Stop Me Now - The Score.mp3
+pCan't Hold Us - Macklemore .mp3
+pDancing's Not a Crime - Panic! at the Disco.mp3
+pDear Bride - 西野カナ (Covered By Kobasolo _ Lefty Hand Cream).mp3
+pDon't Let Me Down (Rock Version) - Nightcore.mp3
+pDon't Threaten Me with a Good Time - Panic! at the Disco lyrics.mp3
+pEmperor's New Clothes - Panic! At The Disco.mp3
+pGangsta's Paradise - Nightcore.mp3
+pHome - Machine Gun Kelly X Ambassadors _ Bebe Rexha.mp3
+pHuman - Rag'n'Bone Man.mp3
+pI'd Rather Drown - Set It Off.mp3
+pI'll Sleep When I_m Dead - Set It Off.mp3
+pIt Doesn't Matter - Five Finger Death Punch.mp3
+pLet's Kill Tonight - Panic! At The Disco.mp3
+pThere's A Good Reason These Tables Are Numbered Honey... - Panic! At The Disco.mp3
+pWolf In Sheep's Clothing - Set It Off.mp3
+pYou're Not My Kind - Five Finger Death Punch.mp3
+pDiamond Eyes (Boom-Lay Boom-Lay Boom) - Shinedown.mp3
+pDon't Threaten Me with a Good Time - Panic! at the Disco.mp3
+pPROMISES - NERO (SKRILLEX AND NERO REMIX).mp3
+pAin't My Last Dance - Five Finger Death Punch.mp3
+pArigatou Aishiteta Hito - Tiara Spontania.mp3
+pCan't Go To Hell - Sin Shake Sin.mp3
+pDiamond Eyes - Shinedown.mp3
+pE for Extinction - Thousand Foot Krutch.mp3
+pIt's Over When It's Over - Falling in Reverse.mp3
+pNamidaboshi - Shion ft Cliff Edge.mp3
+pNarcissistic Cannibal (ft Skrillex and Kill The Noise).mp3
+pRE - REOL.mp3
+pRed Lips - GTA (Skrillex Remix).mp3
+pSoldier - Samantha Jade - Nightcore.mp3
+pUnder and Over It - Five Finger Death Punch.mp3
+pUnder And Over It - Five Finger Death Punch.mp3
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/pwn/.local/share/vifm/Trash/000_Untraveled Road.mp3
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/pwn/.local/share/vifm/Trash/000_Anywhere But Here - Five Finger Death Punch ft. Maria Brink.mp3
+	/home/pwn/Music/Anywhere But Here - Five Finger Death Punch ft. Maria Brink.mp3
+t/home/pwn/.local/share/vifm/Trash/000_All Good Things - For The Glory.mp3
+	/home/pwn/Music/tmp/All Good Things - For The Glory.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Angel - THEORY.mp3
+	/home/pwn/Music/tmp/Angel - THEORY.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Boulevard of Broken Dreams - Green Day.mp3
+	/home/pwn/Music/tmp/Boulevard of Broken Dreams - Green Day.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Classic - MKTO
+	/home/pwn/Music/tmp/Classic - MKTO
+t/home/pwn/.local/share/vifm/Trash/000_Eye of the Storm - WattWhite.mp3
+	/home/pwn/Music/tmp/Eye of the Storm - WattWhite.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Footsteps - Pop Evil.mp3
+	/home/pwn/Music/tmp/Footsteps - Pop Evil.mp3
+t/home/pwn/.local/share/vifm/Trash/000_History Of Violence - THEORY.mp3
+	/home/pwn/Music/tmp/History Of Violence - THEORY.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Kids In The Dark - All Time Low.mp3
+	/home/pwn/Music/tmp/Kids In The Dark - All Time Low.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Money Run Low - The Score.mp3
+	/home/pwn/Music/tmp/Money Run Low - The Score.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Natural - Imagine Dragons.mp3
+	/home/pwn/Music/tmp/Natural - Imagine Dragons.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Straight Jacket - THEORY.mp3
+	/home/pwn/Music/tmp/Straight Jacket - THEORY.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Tightrope - The Score.mp3
+	/home/pwn/Music/tmp/Tightrope - The Score.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Rx - Theory of a Deadman(1).mp3
+	/home/pwn/Music/Rx - Theory of a Deadman(1).mp3
+t/home/pwn/.local/share/vifm/Trash/001_Straight Jacket - THEORY.mp3
+	/home/pwn/Music/Straight Jacket - THEORY.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Thousand Foot Krutch The End is Where We Begin (Official Audio).mp3
+	/home/pwn/Music/tmp/Thousand Foot Krutch The End is Where We Begin (Official Audio).mp3
+t/home/pwn/.local/share/vifm/Trash/000_Thousand Foot Krutch The End is Where We Begin (Official Audio).mp3.part
+	/home/pwn/Music/tmp/Thousand Foot Krutch The End is Where We Begin (Official Audio).mp3.part
+t/home/pwn/.local/share/vifm/Trash/000_Light Up - Thousand Foot Krutch.mp3
+	/home/pwn/Music/tmp/Light Up - Thousand Foot Krutch.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Light Up - Thousand Foot Krutch.mp3.part
+	/home/pwn/Music/tmp/Light Up - Thousand Foot Krutch.mp3.part
+t/home/pwn/.local/share/vifm/Trash/000_Thousand Foot Krutch Courtesy Call (Official Audio).mp3
+	/home/pwn/Music/tmp/Thousand Foot Krutch Courtesy Call (Official Audio).mp3
+t/home/pwn/.local/share/vifm/Trash/000_Thousand Foot Krutch Courtesy Call (Official Audio).mp3.part
+	/home/pwn/Music/tmp/Thousand Foot Krutch Courtesy Call (Official Audio).mp3.part
+t/home/pwn/.local/share/vifm/Trash/000_Just Like You - Falling In Reverse.mp3
+	/home/pwn/Music/Just Like You - Falling In Reverse.mp3
+t/home/pwn/.local/share/vifm/Trash/000_download
+	/home/pwn/Music/download
+t/home/pwn/.local/share/vifm/Trash/000_Sick Of It Official Video - Skillet.mp3
+	/home/pwn/Music/Sick Of It Official Video - Skillet.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Ashes Of Eden - Breaking Benjamin.mp3
+	/home/pwn/Music/Ashes Of Eden - Breaking Benjamin.mp3
+t/home/pwn/.local/share/vifm/Trash/001_Classic - MKTO
+	/home/pwn/Music/Classic - MKTO
+t/home/pwn/.local/share/vifm/Trash/000_Classic - Mkto.mp3
+	/home/pwn/Music/Classic - Mkto.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Hibikase (Shoose _ Reol).mp3
+	/home/pwn/Music/Hibikase (Shoose _ Reol).mp3
+t/home/pwn/.local/share/vifm/Trash/000_Nightcore - Killin' It - Krewella.mp3
+	/home/pwn/Music/tmp/Nightcore - Killin' It - Krewella.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Krewella - Killin' It (Official Audio - HD).mp3
+	/home/pwn/Music/tmp/Krewella - Killin' It (Official Audio - HD).mp3
+t/home/pwn/.local/share/vifm/Trash/000_Need Your Heart.mp3
+	/home/pwn/Music/Need Your Heart.mp3
+t/home/pwn/.local/share/vifm/Trash/000_One Click Headshot - Dubstep.mp3
+	/home/pwn/Music/One Click Headshot - Dubstep.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Red Lips - GTA (Skrillex Remix).mp3
+	/home/pwn/Music/Red Lips - GTA (Skrillex Remix).mp3
+t/home/pwn/.local/share/vifm/Trash/000_Under And Over It - Five Finger Death Punch.mp3
+	/home/pwn/Music/Under And Over It - Five Finger Death Punch.mp3
+t/home/pwn/.local/share/vifm/Trash/000_Untraveled Road.mp3
+	/home/pwn/Music/Untraveled Road.mp3
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
