@@ -1,12 +1,7 @@
 #!/usr/bin/bash
 
 set -e
-
-##############################
-# Options and Variables
-##############################
-
-source ./var.sh
+source var.sh
 
 ##############################
 # Declare functions
@@ -27,10 +22,10 @@ install_pkg(){
 
 	echo -e "Updating stuff\n"
 	sudo apt update
-	sudo apt dist-upgrade
+	sudo apt -y dist-upgrade
 
 	echo -e "Installing general tools\n"
-	sudo apt install - < $path_to_pkgs/general.txt
+	sudo apt -y install $(cat pkglist/general.txt | tr '\n' ' ')
 
 	echo -e "[DONE] Installing with standard package manager\n"
 }
@@ -57,8 +52,10 @@ install_manual(){
 copy_dotfiles(){
 	echo -e "[START] Copying dot files\n"
 
-	cp -r ./dotfiles/home/* $HOME
-	cp -r ./dotfiles/config/* $HOME/.config
+	#cp -rf ./dotfiles/home/* $HOME 2>&1
+	cp -rf ./dotfiles/home/.* $HOME 2>&1
+	cp -rf ./dotfiles/config/* $HOME/.config 2>&1
+	cp -rf ./dotfiles/config/.* $HOME/.config 2>&1
 
 	echo -e "[DONE] Copying dot files\n"
 }
@@ -77,7 +74,7 @@ setup(){
 
 	# Loop through setup/general and run every script
 	for dir in ./setup/*; do
-		sh $dir/setup.sh
+		bash $dir/setup.sh
 	done
 
 	echo -e "[DONE] Setting up general tools\n"
@@ -106,7 +103,7 @@ pre_install
 install_pkg
 install_python
 install_manual
-copy_dotfiles
+#copy_dotfiles
 cron
 setup
 post_install

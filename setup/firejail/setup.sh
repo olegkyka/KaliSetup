@@ -1,9 +1,8 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 
 echo -e "[START] Setting up firejail\n"
 
 set -e
-source ../../var.sh
 
 echo "firecfg"
 sudo firecfg
